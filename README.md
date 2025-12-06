@@ -6,7 +6,7 @@ This project was originally customized by Masum, and later further adapted and r
 
 ## Last Modifed Date
 
-20-September-2025 by Alin
+06-December-2025 by Alin
 
 ## Run this command in the terminal for making structure
 
@@ -41,6 +41,9 @@ Database Visit: https://localhost:8080
 
 ## Run other command before adding 'docker compose run --rm project'
 
-Such as: 'docker compose run --rm projefct php artisan storage:link'
+Such as:
 <br>
-or 'docker compose run --rm project compose install packagename'
+
+1. 'docker compose run --rm projefct php artisan storage:link'
+   <br>
+2. 'docker compose run --rm project composer install packagename'
