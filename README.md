@@ -6,31 +6,46 @@ This project was originally customized by Masum, and later further adapted and r
 
 ## Last Modifed Date
 
-06-December-2025 by Alin
+07-December-2025 by Alin
+
+## Check 'default.conf' file
+
+open the default.conf file: <br>
+'Laravel-Docker-Alin-Version/nginx/default.conf' <br>
+
+Change these information (if need): <br>
+server_name 192.168.1.177; <br>
+listen 80;
 
 ## Run this command in the terminal for making structure
 
-composer global require laravel/installer
+docker compose run --rm project composer global require laravel/installer
 
 ## Run this command in the terminal to Create a Laravel project in 'src' folder
 
 laravel new src
 
-## Modify '.env' file from 'src' folder
+## Modify '.env' file from 'src' folder according to docker-compose.yml
 
 ```
 APP_URL=https://localhost
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
-DB_DATABASE=testx
-DB_USERNAME=masum
-DB_PASSWORD=K4hvdq9tj9
+DB_DATABASE=testdb
+DB_USERNAME=alin
+DB_PASSWORD=12345678
 ```
 
 (You should take the database information from the MySQL section of the docker-compose.yml file and put it exactly as it is into the src/.env file.)
 
-## Run docker compose up -d
+## Run this command for migration
+
+docker compose run --rm project php artisan migrate
+
+## Run this command to run the project
+
+'docker compose up -d'
 
 (it will create mysql folder in root directory)
 
@@ -44,6 +59,6 @@ Database Visit: https://localhost:8080
 Such as:
 <br>
 
-1. 'docker compose run --rm projefct php artisan storage:link'
+1. 'docker compose run --rm project php artisan storage:link'
    <br>
 2. 'docker compose run --rm project composer install packagename'
