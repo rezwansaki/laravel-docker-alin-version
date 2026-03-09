@@ -33,11 +33,11 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: "K4hvdq9tj9"
+      MYSQL_ROOT_PASSWORD: "12345678"
       MYSQL_ROOT_HOST: "%"
-      MYSQL_DATABASE: "testx"
-      MYSQL_USER: "masum"
-      MYSQL_PASSWORD: "K4hvdq9tj9"
+      MYSQL_DATABASE: "testdb"
+      MYSQL_USER: "alin"
+      MYSQL_PASSWORD: "12345678"
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
     volumes:
       - "./mysql:/var/lib/mysql"

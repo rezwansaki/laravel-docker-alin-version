@@ -6,7 +6,7 @@ This project was originally customized by Masum, and later further adapted and r
 
 ## Last Modifed Date
 
-07-December-2025 by Alin
+09-March-2026 by Alin
 
 ## Check 'default.conf' file
 
@@ -17,7 +17,7 @@ Change these information (if need): <br>
 server_name 192.168.1.177; <br>
 listen 80;
 
-## Run this command in the terminal for making structure
+## Remove 'src' folder then run this command in the terminal for making structure
 
 docker compose run --rm project composer global require laravel/installer
 
