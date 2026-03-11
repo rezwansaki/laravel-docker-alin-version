@@ -2,7 +2,7 @@ services:
   nginx:
     image: nginx
     ports:
-      - "80:80"
+      - "8011:80"
       - "443:443"
     volumes:
       - ./src:/var/www/html

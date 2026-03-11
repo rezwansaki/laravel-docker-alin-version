@@ -6,7 +6,7 @@ This project was originally customized by Masum, and later further adapted and r
 
 ## Last Modifed Date
 
-09-March-2026 by Alin
+11-March-2026 by Alin
 
 ## Check 'default.conf' file
 
@@ -17,18 +17,18 @@ Change these information (if need): <br>
 server_name 192.168.1.177; <br>
 listen 80;
 
-## Remove 'src' folder then run this command in the terminal for making structure
+## Run this command in the terminal for making structure
 
 docker compose run --rm project composer global require laravel/installer
 
-## Run this command in the terminal to Create a Laravel project in 'src' folder
+## Remove 'src' folder then run this command in the terminal to Create a Laravel project in 'src' folder
 
 laravel new src
 
 ## Modify '.env' file from 'src' folder according to docker-compose.yml
 
 ```
-APP_URL=https://localhost
+APP_URL=http://localhost:8011
 DB_CONNECTION=mysql
 DB_HOST=mysql
 DB_PORT=3306
@@ -51,7 +51,7 @@ docker compose run --rm project php artisan migrate
 
 ## Visit the project and open the database server
 
-App Visit: https://localhost/ <br>
+App Visit: https://localhost:8011 <br>
 Database Visit: https://localhost:8080
 
 ## Run other command before adding 'docker compose run --rm project'
