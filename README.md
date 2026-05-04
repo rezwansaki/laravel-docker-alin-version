@@ -6,7 +6,11 @@ This project was originally customized by Masum, and later further adapted and r
 
 ## Last Modifed Date
 
-11-March-2026 by Alin
+04-May-2026 by Alin
+
+## Before run the project
+
+at first install docker and docker-compose plugin then fix folder permission problem then start or restart the docker, install php with extension and check Dockerfile.
 
 ## Check 'default.conf' file
 
@@ -17,13 +21,19 @@ Change these information (if need): <br>
 server_name 192.168.1.177; <br>
 listen 80;
 
-## Run this command in the terminal for making structure
+## Run this command in the terminal for running project
+
+docker compose up -d
+
+## Run this command in the terminal for using laravel installer to create a laravel project
 
 docker compose run --rm project composer global require laravel/installer
 
 ## Remove 'src' folder then run this command in the terminal to Create a Laravel project in 'src' folder
 
-laravel new src
+laravel new src <br>
+or, <br>
+composer create-project laravel/laravel src
 
 ## Modify '.env' file from 'src' folder according to docker-compose.yml
 
